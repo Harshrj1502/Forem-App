@@ -14,7 +14,6 @@ const GamePage = () => {
       <Navbar />
         <Routes>
           <Route path="/" element={<GameGrid />} />
-          
         </Routes>
       <Footer />
     </div>

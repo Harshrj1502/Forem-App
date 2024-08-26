@@ -2,16 +2,17 @@ import React from 'react'
 import { FaDiscord } from "react-icons/fa";
 import { BsThreads } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <section id='footer ' className='flex p-2 py-4 justify-around bg-secondary text-grey '>
+    <section id='footer ' className='flex p-2 py-4 justify-around bg-secondary text-grey mb-0 '>
       <div>
       <ul className='flex gap-2'>
-        <li className='text-base font-medium'>About</li>
-        <li className='text-base font-medium'>Contact</li>
-        <li className='text-base font-medium'>Backers</li>
-        <li className='text-base font-medium'>Terms</li>
-        <li className='text-base font-medium'>Privacy</li>
+        <li className='text-base font-medium cursor-pointer'>About</li>
+        <Link to="/ContactPage"> <li className='text-base font-medium cursor-pointer' >Contact</li></Link>
+        <li className='text-base font-medium cursor-pointer'>Backers</li>
+        <li className='text-base font-medium cursor-pointer'>Terms</li>
+        <li className='text-base font-medium cursor-pointer'>Privacy</li>
       </ul>
       <div className='flex gap-2 text-sm'>
       <h1>@Lorem</h1>

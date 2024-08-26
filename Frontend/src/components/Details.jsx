@@ -17,11 +17,11 @@ function Details({imglink}) {
         <div className="w-[50vw]">
         <img src={imglink} alt="NA" /> 
         </div>
-        <div className="w-[50vw]">
+        <div className="w-[50vw] py-[15vh] px-4 ">
           <h className="font-normal text-3xl text-white">
             Track your personal game collection
           </h>
-          <p className="text-base text-blue">
+          <p className="text-base text-blue ">
             Log any and every game you've played, are currently playing, and
             want to play. Be as detailed as you want with features such as time
             tracking, daily journaling, platform ownership and more.

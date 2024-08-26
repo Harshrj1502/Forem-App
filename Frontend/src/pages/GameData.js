@@ -1,13 +1,13 @@
 const Gamedata = [
-    {
-        id: 1,
-        title: "Minecraft",
-        image: "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg",
-        alt: "Minecraft game cover",
-        release:"May 26,2020",
-        company:"by Mojang Studios, Xbox Game Studios",
-        info: "Brave the dungeons alone, or team up with friends! Up to four players can battle together through action-packed, treasure-stuffed, wildly varied levels, all in an epic quest to save the villagers and take down the evil Arch-Illager! Discover new weapons and items that will help you defeat a ruthless swarm of new-and-nasty mobs. Fight or flee through canyons, swamps and of course  mines! Any adventurer brave or foolish enough (or a bit-of-both!) to explore this blocky and beautiful world will need to come prepared. So quickly,gear up!",
-      },
+    // {
+    //     id: 1,
+    //     title: "Minecraft",
+    //     image: "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg",
+    //     alt: "Minecraft game cover",
+    //     release:"May 26,2020",
+    //     company:"by Mojang Studios, Xbox Game Studios",
+    //     info: "Brave the dungeons alone, or team up with friends! Up to four players can battle together through action-packed, treasure-stuffed, wildly varied levels, all in an epic quest to save the villagers and take down the evil Arch-Illager! Discover new weapons and items that will help you defeat a ruthless swarm of new-and-nasty mobs. Fight or flee through canyons, swamps and of course  mines! Any adventurer brave or foolish enough (or a bit-of-both!) to explore this blocky and beautiful world will need to come prepared. So quickly,gear up!",
+    //   },
       {
         id: 2,
         title: "Grand Theft Auto V",

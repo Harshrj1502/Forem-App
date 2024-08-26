@@ -16,10 +16,12 @@ const GameDetails = () => {
   return (
     <>
     <Navbar/>
-    <div className=" mx-auto p-10 text-white bg-primary ">
+    <div className=" mx-auto p-48 text-white bg-primary ">
       <h1 className="text-4xl font-bold mb-6">{game.title}</h1>
       <img src={game.image} alt={game.alt} className=" object-cover rounded-md mb-6 " />
-      <p className="text-lg">{game.info}</p>
+      <p className="text-base text-blue">Release Date-{game.release}</p>
+      <p className="text-lg text-blue">Game-Company{game.company}</p>
+      <p className="text-lg text-white">{game.info}</p>
     </div>
     <CommentSection/>
     <Footer/>

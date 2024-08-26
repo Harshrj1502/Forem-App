@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="bg-primary">
       <Navbar />
-      <section className=" bg-primary px-52  my-40 flex flex-col gap-5">
+      <section className=" bg-primary px-36  my-40 flex flex-col gap-5">
         <h1 className="text-7xl font-medium text-white">GAME FORUM </h1>
         <h1 className=" text-3xl  text-blue">
           Discover,Collect analyze Your Games
@@ -66,7 +66,7 @@ const HomePage = () => {
       <section className="  flex flex-col gap-5 ">
       <h1 className="text-blue text-xl mx-36 ">Recently Trending</h1>
      <div className="flex gap-5 justify-around mx-36">
-     <Trending imglink={`https://images4.alphacoders.com/133/1330870.jpeg`}/>
+     <Trending imglink={`https://images4.alphacoders.com/133/1330870.jpeg`} name={"Grand theft auto v"}/>
       <Trending imglink={`https://images.alphacoders.com/132/1326355.jpeg`}/>
       <Trending imglink={`https://wallpapercave.com/wp/wp2585294.jpg`}/>
       <Trending imglink={`https://images7.alphacoders.com/135/1353695.jpeg`}/>

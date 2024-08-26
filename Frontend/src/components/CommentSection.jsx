@@ -1,74 +1,48 @@
-import React, { useState, useEffect } from 'react';
-import { io } from 'socket.io-client';
-import axios from 'axios';
+// TodoList.jsx
+import React, { useState } from 'react';
+import ReviewSecond from './ReviewSecond';
 
-const socket = io('http://localhost:4000');
+const TodoList = () => {
+  const [todos, setTodos] = useState([]);
+  const [input, setInput] = useState('');
 
-const CommentSection = () => {
-  const [comments, setComments] = useState([]);
-  const [username, setUsername] = useState('');
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    axios.get('http://localhost:4000/comments')
-      .then((response) => {
-        setComments(response.data);
-      });
-
-    socket.on('new-comment', (comment) => {
-      setComments((prevComments) => [comment, ...prevComments]);
-    });
-
-    return () => {
-      socket.off('new-comment');
-    };
-  }, []);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const newComment = { username, message };
-    socket.emit('new-comment', newComment);
-
-    setUsername('');
-    setMessage('');
+  const handleAddTodo = () => {
+    if (input.trim() === '') return; // Do not add empty to-dos
+    setTodos([...todos, input]);
+    setInput('');
   };
 
-  return (
-    <div className="max-w-2xl mx-auto mt-8">
-      <form onSubmit={handleSubmit} className="mb-4">
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          className="border rounded p-2 mr-2 w-1/4"
-          required
-        />
-        <input
-          type="text"
-          placeholder="Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="border rounded p-2 mr-2 w-1/2"
-          required
-        />
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-          Submit
-        </button>
-      </form>
+  // const handleRemoveTodo = (index) => {
+  //   setTodos(todos.filter((_, i) => i !== index));
+  // };
 
-      <div className="space-y-4">
-        {comments.map((comment) => (
-          <div key={comment._id} className="border-b pb-2">
-            <div className="font-bold">{comment.username}</div>
-            <div>{comment.message}</div>
-            <div className="text-sm text-gray-500">{new Date(comment.timestamp).toLocaleString()}</div>
-          </div>
-        ))}
+  return (
+    <div className=" px-48 py-10 bg-primary ">
+      <div className="flex gap-5">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          className=" placeholder:bg-primary bg-primary outline-none text-grey placeholder:text-sm " 
+          placeholder="Add a new comment"
+        />
+        <button
+          onClick={handleAddTodo}
+          className="text-white bg-pink rounded-sm px-10 py-1"
+        >
+          Add
+        </button>
       </div>
+      <ul className="flex flex-col gap-2">
+        {todos.map((todo, index) => (
+          <li key={index} className="flex items-center justify-between py-1">
+            <ReviewSecond text={todo} />
+            {/* <span className="text-grey  text-xl">{todo}</span> */}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default CommentSection;
+export default TodoList;
