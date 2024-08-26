@@ -67,11 +67,11 @@ const HomePage = () => {
       <h1 className="text-blue text-xl mx-36 ">Recently Trending</h1>
      <div className="flex gap-5 justify-around mx-36">
      <Trending imglink={`https://images4.alphacoders.com/133/1330870.jpeg`} name={"Grand theft auto v"}/>
-      <Trending imglink={`https://images.alphacoders.com/132/1326355.jpeg`}/>
-      <Trending imglink={`https://wallpapercave.com/wp/wp2585294.jpg`}/>
-      <Trending imglink={`https://images7.alphacoders.com/135/1353695.jpeg`}/>
-      <Trending imglink={`https://wallpapercave.com/wp/wp9493307.jpg`}/>
-      <Trending imglink={`https://wallpapercave.com/wp/wp2514145.png`}/>
+      <Trending imglink={`https://images.alphacoders.com/132/1326355.jpeg`} name={"The Last of Us"}/>
+      <Trending imglink={`https://wallpapercave.com/wp/wp2585294.jpg`} name={"Fortnite"}/>
+      <Trending imglink={`https://images7.alphacoders.com/135/1353695.jpeg`}name={"PUBG"}/>
+      <Trending imglink={`https://wallpapercave.com/wp/wp9493307.jpg`}name={"Raibow six sevege"}/>
+      <Trending imglink={`https://wallpapercave.com/wp/wp2514145.png`}name={"Call Of Duty"}/>
      </div>
       </section>
       <section className="">

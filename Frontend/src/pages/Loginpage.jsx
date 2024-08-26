@@ -18,7 +18,7 @@ function Loginpage() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center bg-primary gap-5 p-36">
+      <section className="flex flex-col items-center bg-primary gap-5 p-32">
         <h1 className="text-5xl text-grey">WELCOME BACK</h1>
         {/* onSubmit={handlesubmit} */}
         <form
