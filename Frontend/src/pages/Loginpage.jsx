@@ -83,7 +83,7 @@ function Loginpage() {
         </p>
         <p className="text-base max-sm:text-sm">
           Don’t have an account?{" "}
-          <Link to={"/RegisterPage"} className="underline text-blue">
+          <Link to={"/RegisterPage"} className="underline text-pinkq">
             Sign up now
           </Link>
         </p>

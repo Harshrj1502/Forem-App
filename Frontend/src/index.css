@@ -22,6 +22,6 @@
     @apply border-black border-2 py-1 px-5  rounded-lg bg-black hover:bg-white text-white hover:text-black;
   }
   .loginpage{
-    @apply bg-blue py-4 px-4 rounded-lg w-[25vw] max-sm:w-[70vw] max-lg:w-[45vw]
+    @apply bg-pink py-4 px-4 rounded-lg w-[25vw] max-sm:w-[70vw] max-lg:w-[45vw]
   }
 }
