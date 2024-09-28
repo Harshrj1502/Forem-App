@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Gamedata } from './Gamedata'; // Adjust the import path
+// import { Gamedata } from './Gamedata'; // Adjust the import path
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CommentSection from '../components/CommentSection';

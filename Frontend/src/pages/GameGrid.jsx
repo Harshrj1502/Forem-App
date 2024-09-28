@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Gamedata } from './Gamedata'; // Adjust the import path
+// import { Gamedata } from './Gamedata'; // Adjust the import path
 
 const GameGrid = () => {
   return (
