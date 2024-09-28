@@ -11,6 +11,7 @@ import { FaWindows, FaPlaystation, FaXbox } from 'react-icons/fa';
 import ContactPage from "./pages/ContactPage";
 import SideNavbar from "./components/SideNavbar";
 import GameDetails from "./pages/GameDetails";
+import Navbar from "./components/Navbar";
 const platforms = [
   {
     name: 'Windows PC',
@@ -46,6 +47,7 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route exact path="/test" element={<Navbar />} />
           <Route exact path="/" element={<HomePage />} />
           <Route path="/GamePage" element={<GamePage/>} />
           <Route path="/RegisterPage" element={<RegisterPage />} />
@@ -70,7 +72,6 @@ function App() {
               </div>
             }
           />
-          
         </Routes>
       </Router>
 
