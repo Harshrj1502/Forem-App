@@ -116,7 +116,7 @@ const RegisterPage = () => {
         </p>
         <p className="text-base max-sm:text-sm">
           Already have an account?{" "}
-          <Link to={"/Loginpage"} className="underline text-blue">
+          <Link to={"/Loginpage"} className="underline text-pink">
             {" "}
             Login In{" "}
           </Link>
